@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <h1>Welcome to the BMI Calculator</h1>
+
+    <!-- JavaScript code will go here -->
+    <script>
+        // Step 1: Ask the user for their name, weight, and height
+        let name = prompt("Please enter your name:");
+        let weight = parseFloat(prompt("Please enter your weight (in kg):"));
+        let height = parseFloat(prompt("Please enter your height (in meters):"));
+
+        // Step 2: Calculate BMI
+        let bmi = weight / (height * height);
+
+        // Step 3: Display the result in a popup dialog box
+        alert(`Hello, ${name}! Your BMI is ${bmi.toFixed(2)}.`);
+    </script>
+</body>
+</html>
